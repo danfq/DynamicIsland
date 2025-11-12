@@ -23,7 +23,5 @@ jobs:
         with:
           image_size: 120
           commit_message: README - Team & Special Thanks
-          committer_username: danfq
-          committer_email: danfq.dev@gmail.com
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
