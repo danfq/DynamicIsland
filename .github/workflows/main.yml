@@ -13,14 +13,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      # Debug Branch Information
-      - name: Debug Branch Information
-        run: |
-          git branch -a
-          git status
-          echo "Current branch: $(git branch --show-current)"
+          ref: ${{ github.head_ref || github.ref_name }}
 
       # Team & Special Thanks
       - name: Team & Special Thanks
