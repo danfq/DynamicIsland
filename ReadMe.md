@@ -1,41 +1,78 @@
 <p align="center">
-  <img src=".github/assets/atoll-logo.png" alt="Atoll logo" width="120">
+  <img src=".github/assets/atoll-logo.png" alt="Atoll" width="120">
 </p>
 
 <p align="center">
   <a href="https://github.com/Ebullioscopic/Atoll/stargazers">
-    <img src="https://img.shields.io/github/stars/Ebullioscopic/Atoll?style=social" alt="GitHub stars"/>
+    <img src="https://img.shields.io/github/stars/Ebullioscopic/Atoll?style=social" alt="GitHub Stars"/>
   </a>
   <a href="https://github.com/Ebullioscopic/Atoll/network/members">
-    <img src="https://img.shields.io/github/forks/Ebullioscopic/Atoll?style=social" alt="GitHub forks"/>
+    <img src="https://img.shields.io/github/forks/Ebullioscopic/Atoll?style=social" alt="GitHub Forks"/>
   </a>
   <a href="https://github.com/Ebullioscopic/Atoll/releases">
-    <img src="https://img.shields.io/github/downloads/Ebullioscopic/Atoll/total?label=Downloads" alt="GitHub downloads"/>
+    <img src="https://img.shields.io/github/downloads/Ebullioscopic/Atoll/total?label=Downloads" alt="GitHub Downloads"/>
   </a>
-  <a href="https://discord.gg/zvjB4tJBkt">
-    <img src="https://img.shields.io/discord/1120176554840510494?label=Discord&logo=discord&color=7289da" alt="Discord server"/>
+  <a href="https://discord.gg/bR83qVEzUd">
+    <img src="https://img.shields.io/discord/1429481472942669896?label=Discord&logo=discord&color=7289da" alt="Discord Server"/>
   </a>
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/zvjB4tJBkt">Join our Discord community</a>
+  <a href="https://discord.gg/bR83qVEzUd">Join our Discord Community</a>
 </p>
 
-**Project rename:** DynamicIsland is now called **Atoll**. Visit the new repository at [github.com/Ebullioscopic/Atoll](https://github.com/Ebullioscopic/Atoll).
+**Project rename:** DynamicIsland is now called **Atoll**. View the new Repository [here](https://github.com/Ebullioscopic/Atoll).
+
+## Updating Existing Clones
+If you previously cloned DynamicIsland, update the remote to track the Atoll repository:
+
+```bash
+git remote set-url origin https://github.com/Ebullioscopic/Atoll.git
+```
+
+# The Team
+
+## Collaborators
+
+<!-- readme: collaborators -start -->
+<!-- readme: collaborators -end -->
+
+## Contributors
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
+
+# Special Thanks
+
+<!-- readme: TheBoringTeam,henrikruscon -start -->
+<!-- readme: TheBoringTeam,henrikruscon -end -->
+
+Atoll builds upon the work of several open-source projects and draws inspiration from innovative macOS applications:
+
+- [**Boring.Notch**](https://github.com/TheBoredTeam/boring.notch) - foundational codebase that provided the initial media player integration, AirDrop surface implementation, file dock functionality, and calendar event display. Major architectural patterns and notch interaction models were adapted from this project.
+
+- [**Alcove**](https://tryalcove.com) - primary inspiration for the Minimalistic Mode interface design and the conceptual framework for lock screen widget integration that informed Atoll's compact layout strategy.
+
+- [**Stats**](https://github.com/exelban/stats) - source implementation for CPU temperature monitoring via SMC (System Management Controller) access, frequency sampling through IOReport bindings, and per-core CPU utilisation tracking. The system metrics collection architecture derives from Stats project readers.
+
+A heartfelt thanks to [TheBoredTeam](https://github.com/TheBoredTeam) for being supportive and being totally awesome. Atoll would not have been possible without Boring.Notch.
 
 # Atoll
-
 Atoll transforms the MacBook notch into an interactive command surface that unifies media control, live telemetry, and productivity tools in a single SwiftUI experience.
 
 ## Overview
-
 <p align="center">
-  <img src=".github/assets/atoll-demo.gif" alt="Atoll demo" width="720">
+  <img src=".github/assets/atoll-demo.gif" alt="Atoll Demo" width="720">
 </p>
 
 Atoll runs as a menu bar companion that expands from the notch only when needed. It combines live activities, dashboard cards, and contextual panels built with first-party macOS frameworks.
 
 The application provides a comprehensive interface for monitoring system performance, controlling media playback, managing productivity workflows, and accessing utility tools without disrupting the active workspace. Atoll leverages SwiftUI, Combine, AVFoundation, and IOKit to deliver native macOS integration with minimal performance overhead.
+
+## Download
+You can find all versions of Atoll in the [Releases](https://github.com/Ebullioscopic/Atoll/releases) section!
+
+Downloads are available as DMG files, ready for installation. Just open it, and drag the Atoll app to your Applications folder!
 
 ## Key Capabilities
 
@@ -113,7 +150,7 @@ The application provides a comprehensive interface for monitoring system perform
 - **Administrative privileges** for enabling system monitoring features that access IOKit sensors and performance metrics.
 - **Optional permissions** for full functionality: Accessibility (colour picker, screen assistant), Camera (mirror feature), Calendar (event integration), Screen Recording (advanced monitoring), and Music Library (media controls).
 
-## Installation
+## Build It Yourself
 1. Clone the repository and open the project.
    ```bash
    git clone https://github.com/Ebullioscopic/Atoll.git
@@ -317,31 +354,5 @@ This operation clears UserDefaults, removes application support files and caches
 ## License
 Atoll is released under the GPL v3 License. Refer to [LICENSE](LICENSE) for the full terms.
 
-## Acknowledgments
-
-Atoll builds upon the work of several open-source projects and draws inspiration from innovative macOS applications:
-
-- [**Boring.Notch**](https://github.com/TheBoredTeam/boring.notch) - foundational codebase that provided the initial media player integration, AirDrop surface implementation, file dock functionality, and calendar event display. Major architectural patterns and notch interaction models were adapted from this project.
-
-- [**Alcove**](https://tryalcove.com) - primary inspiration for the Minimalistic Mode interface design and the conceptual framework for lock screen widget integration that informed Atoll's compact layout strategy.
-
-- [**Stats**](https://github.com/exelban/stats) - source implementation for CPU temperature monitoring via SMC (System Management Controller) access, frequency sampling through IOReport bindings, and per-core CPU utilisation tracking. The system metrics collection architecture derives from Stats project readers.
-
-## Contributors
-
-<a href="https://github.com/Ebullioscopic/Atoll/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Ebullioscopic/Atoll" />
-</a>
-
 ## Star History
-
 [![Star History Chart](https://api.star-history.com/svg?repos=Ebullioscopic/Atoll&type=timeline&legend=top-left)](https://www.star-history.com/#Ebullioscopic/Atoll&type=timeline&legend=top-left)
-
-## Updating Existing Clones
-If you previously cloned DynamicIsland, update the remote to track the Atoll repository:
-
-```bash
-git remote set-url origin https://github.com/Ebullioscopic/Atoll.git
-```
-
-A heartfelt thanks to [TheBoredTeam](https://github.com/TheBoredTeam) for being supportive and being totally awesome, Atoll would not have been possible without Boring.Notch

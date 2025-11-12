@@ -1,0 +1,26 @@
+on:
+  push:
+    branches:
+      - main
+      - misc/readme
+  pull_request:
+    branches:
+      - main
+      - misc/readme
+
+jobs:
+  contrib-readme-job:
+    runs-on: ubuntu-latest
+    name: Automate Contributors & Collaborators in README
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Team & Special Thanks
+        uses: akhilmhdh/contributors-readme-action@v2.3.11
+        with:
+          image_size: 120
+          commit_message: README - Team & Special Thanks
+          auto_detect_branch_protection: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
