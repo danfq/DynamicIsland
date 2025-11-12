@@ -1,4 +1,12 @@
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+      - misc/readme
+  pull_request:
+    branches:
+      - main
+      - misc/readme
 
 jobs:
   contrib-readme-job:
@@ -8,14 +16,6 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      # Checkout
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: ${{ github.head_ref || github.ref_name }}
-
-      # Team & Special Thanks
       - name: Team & Special Thanks
         uses: akhilmhdh/contributors-readme-action@v2.3.11
         with:
