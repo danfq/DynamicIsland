@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  contrib-readme-job:
+    runs-on: ubuntu-latest
+    name: Automate Contributors & Collaborators in README
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Contribute List
+        uses: akhilmhdh/contributors-readme-action@v2.3.11
+        with:
+          image_size: 120
+          commit_message: README - Team & Special Thanks
+          committer_username: danfq
+          committer_email: danfq.dev@gmail.com
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
