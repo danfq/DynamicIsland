@@ -4,21 +4,21 @@
 
 <p align="center">
   <a href="https://github.com/Ebullioscopic/Atoll/stargazers">
-    <img src="https://img.shields.io/github/stars/Ebullioscopic/Atoll?style=social" alt="GitHub stars"/>
+    <img src="https://img.shields.io/github/stars/Ebullioscopic/Atoll?style=social" alt="GitHub Stars"/>
   </a>
   <a href="https://github.com/Ebullioscopic/Atoll/network/members">
-    <img src="https://img.shields.io/github/forks/Ebullioscopic/Atoll?style=social" alt="GitHub forks"/>
+    <img src="https://img.shields.io/github/forks/Ebullioscopic/Atoll?style=social" alt="GitHub Forks"/>
   </a>
   <a href="https://github.com/Ebullioscopic/Atoll/releases">
-    <img src="https://img.shields.io/github/downloads/Ebullioscopic/Atoll/total?label=Downloads" alt="GitHub downloads"/>
+    <img src="https://img.shields.io/github/downloads/Ebullioscopic/Atoll/total?label=Downloads" alt="GitHub Downloads"/>
   </a>
-  <a href="https://discord.gg/zvjB4tJBkt">
-    <img src="https://img.shields.io/discord/1120176554840510494?label=Discord&logo=discord&color=7289da" alt="Discord server"/>
+  <a href="https://discord.gg/bR83qVEzUd">
+    <img src="https://img.shields.io/discord/1429481472942669896?label=Discord&logo=discord&color=7289da" alt="Discord Server"/>
   </a>
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/zvjB4tJBkt">Join our Discord community</a>
+  <a href="https://discord.gg/bR83qVEzUd">Join our Discord Community</a>
 </p>
 
 **Project rename:** DynamicIsland is now called **Atoll**. Visit the new repository at [github.com/Ebullioscopic/Atoll](https://github.com/Ebullioscopic/Atoll).
