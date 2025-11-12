@@ -8,7 +8,17 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - name: Contribute List
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Only run the contributors action on:
+      # - push events (any branch)
+      # - pull_request events where the PR head repo is the same as the base repository (i.e., not a fork)
+      - name: Team & Special Thanks
+        if: >
+          github.event_name == 'push' ||
+          (github.event_name == 'pull_request' &&
+           github.event.pull_request.head.repo.full_name == github.repository)
         uses: akhilmhdh/contributors-readme-action@v2.3.11
         with:
           image_size: 120
